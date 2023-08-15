@@ -1,11 +1,15 @@
 import Addstudent from "./components/AddStudent";
 import Header from "./components/Header";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  return (<>
+  return (
+  <Router>
+    <div>
     <Header/>
-    <Addstudent/>
-    </> 
+  <Routes>  <Route exact path="/add"  Component={Addstudent} /></Routes>
+</div>
+    </Router>
   );
 }
 
