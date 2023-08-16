@@ -18,7 +18,7 @@ export default function AddStudent () {
       gender
     }
 
-    axios.post("http://localhost:8070/add",newStudent).then(
+    axios.post("http://localhost:8070/student/add",newStudent).then(
       () => {
         alert("Student Add");
   var frm = document.getElementsByName('contact-form')[0];
